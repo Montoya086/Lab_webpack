@@ -1,0 +1,102 @@
+.body_css {
+  background-color: black;
+}
+
+.title_css {
+  color: brown;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-shadow: 1px 1px gold;
+}
+
+li {
+  float: left;
+}
+
+.nav_element {
+  display: block;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+.nav_element:hover {
+  color: rgb(143, 143, 143);
+  background-color: rgb(33, 33, 33);
+}
+
+.navbar_ul_css {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_css {
+  margin: 15px;
+}
+
+.background_css {
+  width: 160%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+my-gnome {
+  position: absolute;
+  left: 100px;
+}
+
+.gnome_css {
+  color: white;
+  position: relative;
+  left: 400px;
+  bottom: 70px;
+}
+
+.gnome_hat {
+  position: relative;
+  left: 15px;
+}
+
+.gnome_feet {
+  position: relative;
+  left: 9px;
+}
+
+.gnome_title {
+  color: white;
+}
+
+.gnome_div {
+  position: relative;
+  top: 500px;
+}
+
+.gnome_buble {
+  position: absolute;
+  background-color: black;
+  left: 500px;
+  bottom: 100px;
+  width: 300px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.gb1 {
+  position: absolute;
+  background-color: black;
+  left: 50px;
+  top: 120px;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.gnome_text {
+  color: black;
+  position: relative;
+  top: 30%;
+  left: 5%;
+}/*# sourceMappingURL=styles.css.map */
