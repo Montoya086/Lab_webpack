@@ -11,7 +11,11 @@ class bDisplay extends HTMLElement{
         link.setAttribute("href", "./styles/sass/styles.css");
         shadowDOM.appendChild(link);
         const card = document.createElement("div");
-        card.setAttribute("class","book-card");
+        if(this.getAttribute("type")==2){
+            card.setAttribute("class","book-card2");
+        }else{
+            card.setAttribute("class","book-card");
+        }
         shadowDOM.appendChild(card);
 
         const image = document.createElement("img");
@@ -19,12 +23,12 @@ class bDisplay extends HTMLElement{
         image.setAttribute("class","book-card-image");
         card.appendChild(image);
 
-        const title = document.createElement("h3");
+        const title = document.createElement("p");
         title.innerText="Titulo: "+this.getAttribute("title");
         title.setAttribute("class","book-card-title");
         card.appendChild(title);
 
-        const author = document.createElement("h3");
+        const author = document.createElement("p");
         author.innerText="Autor: "+this.getAttribute("author");
         author.setAttribute("class","book-card-author");
         card.appendChild(author);

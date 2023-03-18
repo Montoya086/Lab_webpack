@@ -99,3 +99,118 @@ my-gnome{
     top:30%;
     left:5%;
 }
+
+.bg-image-1{
+    width: 100%; height: 100%; object-fit: cover; object-position: 50% 0;
+}
+
+.book-card{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.book-card2{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+.new-book-div{
+    position: relative;
+    left: 25%;
+    animation-name: movement;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+    0% {top:0px}
+    50%{top: 20px}
+    100%{top:0px}
+}
+
+.book-card:hover{
+    box-shadow: 3px 3px 10px #FFF;
+}
+
+.book-card2:hover{
+    box-shadow: 7px 7px 20px red;
+}
+
+.book-card-image{
+    width: 100%;
+    height: 90%;
+}
+
+.book-card-title{
+    font-size: small;
+    color:white;
+    padding-left: 5px;
+
+}
+
+.book-card-author{
+    font-size: small;
+    color:white;
+    padding-left: 5px;
+}
+
+.person_css{
+    color: #FFF;
+    font-weight: 600;
+}
+
+.person_body{
+    position: relative;
+    left: 5px;
+}
+
+.person-p1{
+    position: relative;
+    left: 20px;
+    top:400px;
+    animation-name: person_movement;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes person_movement {
+    0% {left:20px}
+    100%{left: 50%}
+}
+
+.person-p2{
+    position: absolute;
+    left: 50%;
+    top:400px;
+}
+
+.text-p2{
+    position: relative;
+    color: black;
+    top:350px;
+    left: 60%;
+}
+
+.person-p3{
+    position: absolute;
+    left: 50%;
+    top:400px;
+}
+
+.gnome-buble-p3{
+    position: absolute;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    left: 40%;
+    border-radius: 50%;
+}
+
+.gnome-p3{
+    position: relative;
+    color: black;
+    left: -300px;
+    top: 150px;
+}

@@ -7,7 +7,7 @@ class Gnome extends HTMLElement{
         const shadowDOM = this.attachShadow({ mode: "open" });
         const link = document.createElement("link");
         link.setAttribute("rel", "stylesheet");
-        link.setAttribute("href", "./styles/sass/styles.css");
+        link.setAttribute("href", "/src/styles/sass/styles.css");
         shadowDOM.appendChild(link);
         const gnome = document.createElement("div");
         gnome.setAttribute("class", "gnome_css");
