@@ -42,28 +42,6 @@ li{
     object-fit: fill;
 }
 
-my-gnome{
-    position: absolute;
-    left: 100px;
-}
-
-.gnome_css{
-    color: white;
-    position: relative;
-    left: 400px;
-    bottom: 70px;
-}
-
-.gnome_hat{
-    position: relative;
-    left: 15px;
-}
-
-.gnome_feet{
-    position: relative;
-    left: 9px;
-}
-
 .gnome_title{
     color: white;
 }
@@ -100,20 +78,13 @@ my-gnome{
     left:5%;
 }
 
+my-gnome{
+    position: absolute;
+    left: 100px;
+}
+
 .bg-image-1{
     width: 100%; height: 100%; object-fit: cover; object-position: 50% 0;
-}
-
-.book-card{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 30px;
-}
-
-.book-card2{
-    width: 50%;
-    height: 50%;
-    margin-bottom: 30px;
 }
 
 .new-book-div{
@@ -130,41 +101,6 @@ my-gnome{
     100%{top:0px}
 }
 
-.book-card:hover{
-    box-shadow: 3px 3px 10px #FFF;
-}
-
-.book-card2:hover{
-    box-shadow: 7px 7px 20px red;
-}
-
-.book-card-image{
-    width: 100%;
-    height: 90%;
-}
-
-.book-card-title{
-    font-size: small;
-    color:white;
-    padding-left: 5px;
-
-}
-
-.book-card-author{
-    font-size: small;
-    color:white;
-    padding-left: 5px;
-}
-
-.person_css{
-    color: #FFF;
-    font-weight: 600;
-}
-
-.person_body{
-    position: relative;
-    left: 5px;
-}
 
 .person-p1{
     position: relative;

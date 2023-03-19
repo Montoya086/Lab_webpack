@@ -1,3 +1,5 @@
+import './styles.js';
+import './person_comp.js';
 const text = document.getElementById("text-p2");
 window.addEventListener("load", (event) => {
     setTimeout(() => {

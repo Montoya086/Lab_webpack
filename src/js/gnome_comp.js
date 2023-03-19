@@ -6,16 +6,16 @@ class Gnome extends HTMLElement{
     connectedCallback() {
         const shadowDOM = this.attachShadow({ mode: "open" });
         const link = document.createElement("link");
-        link.setAttribute("rel", "stylesheet");
-        link.setAttribute("href", "/src/styles/sass/styles.css");
         shadowDOM.appendChild(link);
         const gnome = document.createElement("div");
         gnome.setAttribute("class", "gnome_css");
+        gnome.style="color: white; position: relative; left: 400px; bottom: 70px;";
         shadowDOM.appendChild(gnome);
 
         const hat = document.createElement("div");
         hat.setAttribute("class", "gnome_hat");
         hat.innerText="/\\";
+        hat.style="position: relative; left: 15px;";
         gnome.appendChild(hat);
 
         const head = document.createElement("div");
@@ -31,6 +31,7 @@ class Gnome extends HTMLElement{
         const feet = document.createElement("div");
         feet.setAttribute("class", "gnome_feet");
         feet.innerText="##";
+        feet.style="position: relative;left: 9px;";
         gnome.appendChild(feet);
     }
 

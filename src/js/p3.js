@@ -1,6 +1,10 @@
+import './styles.js';
+import './person_comp.js';
+import './gnome_comp.js';
+
 const gnome = document.createElement("my-gnome");
 const buble = document.getElementById("gnome-buble-p3");
-bandera=true;
+var bandera=true;
 buble.addEventListener(
     "mouseover",
     (event) => {
@@ -19,7 +23,7 @@ buble.addEventListener(
                 text.style.top="40px";
                 buble.appendChild(text);
                 setTimeout(() => {
-                    window.location.href="/src/index.html";
+                    window.location.href="../index.html";
                 }, 4000);
             }, 1000);
         }

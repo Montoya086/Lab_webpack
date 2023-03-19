@@ -6,11 +6,10 @@ class Person extends HTMLElement{
     connectedCallback() {
         const shadowDOM = this.attachShadow({ mode: "open" });
         const link = document.createElement("link");
-        link.setAttribute("rel", "stylesheet");
-        link.setAttribute("href", "../styles/sass/styles.css");
         shadowDOM.appendChild(link);
         const person = document.createElement("div");
         person.setAttribute("class", "person_css");
+        person.style="color: #FFF;font-weight: 600;";
         shadowDOM.appendChild(person);
 
         const head = document.createElement("div");
@@ -26,6 +25,7 @@ class Person extends HTMLElement{
         const body = document.createElement("div");
         body.setAttribute("class", "person_body");
         body.innerText="|";
+        body.style="position: relative;left: 5px;";
         person.appendChild(body);
 
         const feet = document.createElement("div");
