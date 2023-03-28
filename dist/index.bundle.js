@@ -38,7 +38,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_book_comp_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/book_comp.js */ \"./src/js/book_comp.js\");\n/* harmony import */ var _js_book_comp_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_book_comp_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_gnome_comp_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/gnome_comp.js */ \"./src/js/gnome_comp.js\");\n/* harmony import */ var _js_gnome_comp_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_gnome_comp_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_gnome_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/gnome.js */ \"./src/js/gnome.js\");\n/* harmony import */ var _js_gnome_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_gnome_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/styles */ \"./src/js/styles.js\");\n/* harmony import */ var _js_person_comp_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/person_comp.js */ \"./src/js/person_comp.js\");\n/* harmony import */ var _js_person_comp_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_person_comp_js__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://lab_webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_book_comp_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/book_comp.js */ \"./src/js/book_comp.js\");\n/* harmony import */ var _js_book_comp_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_book_comp_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_gnome_comp_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/gnome_comp.js */ \"./src/js/gnome_comp.js\");\n/* harmony import */ var _js_gnome_comp_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_gnome_comp_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_gnome_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/gnome.js */ \"./src/js/gnome.js\");\n/* harmony import */ var _js_gnome_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_gnome_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_person_comp_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/person_comp.js */ \"./src/js/person_comp.js\");\n/* harmony import */ var _js_person_comp_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_person_comp_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_p1_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/p1.js */ \"./src/js/p1.js\");\n/* harmony import */ var _js_p2_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/p2.js */ \"./src/js/p2.js\");\n/* harmony import */ var _js_p3_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/p3.js */ \"./src/js/p3.js\");\n/* harmony import */ var _js_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/styles */ \"./src/js/styles.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://lab_webpack/./src/index.js?");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ eval("class bDisplay extends HTMLElement{\r\n    constructor(){\r\n        super
   \*************************/
 /***/ (() => {
 
-eval("const buble1 = document.getElementById(\"gnome_buble\");\r\nconst buble2 = document.getElementById(\"gb1\");\r\ndocument.getElementById(\"biblio_gnome\").addEventListener(\r\n    \"mouseover\",\r\n    (event) => {\r\n        buble1.style.backgroundColor = \"white\";\r\n        buble2.style.backgroundColor = \"white\";\r\n      setTimeout(() => {\r\n        buble1.style.backgroundColor = \"black\";\r\n        buble2.style.backgroundColor = \"black\";\r\n      }, 2000);\r\n    },\r\n    false\r\n  );\n\n//# sourceURL=webpack://lab_webpack/./src/js/gnome.js?");
+eval("const buble1 = document.getElementById(\"gnome_buble\");\r\nconst buble2 = document.getElementById(\"gb1\");\r\nif(document.getElementById(\"biblio_gnome\")!=null){\r\n  document.getElementById(\"biblio_gnome\").addEventListener(\r\n      \"mouseover\",\r\n      (event) => {\r\n          buble1.style.backgroundColor = \"white\";\r\n          buble2.style.backgroundColor = \"white\";\r\n        setTimeout(() => {\r\n          buble1.style.backgroundColor = \"black\";\r\n          buble2.style.backgroundColor = \"black\";\r\n        }, 2000);\r\n      },\r\n      false\r\n    );\r\n}\n\n//# sourceURL=webpack://lab_webpack/./src/js/gnome.js?");
 
 /***/ }),
 
@@ -69,6 +69,39 @@ eval("const buble1 = document.getElementById(\"gnome_buble\");\r\nconst buble2 =
 /***/ (() => {
 
 eval("class Gnome extends HTMLElement{\r\n    constructor(){\r\n        super();\r\n    }\r\n\r\n    connectedCallback() {\r\n        const shadowDOM = this.attachShadow({ mode: \"open\" });\r\n        const link = document.createElement(\"link\");\r\n        shadowDOM.appendChild(link);\r\n        const gnome = document.createElement(\"div\");\r\n        gnome.setAttribute(\"class\", \"gnome_css\");\r\n        gnome.style=\"color: white; position: relative; left: 400px; bottom: 70px;\";\r\n        shadowDOM.appendChild(gnome);\r\n\r\n        const hat = document.createElement(\"div\");\r\n        hat.setAttribute(\"class\", \"gnome_hat\");\r\n        hat.innerText=\"/\\\\\";\r\n        hat.style=\"position: relative; left: 15px;\";\r\n        gnome.appendChild(hat);\r\n\r\n        const head = document.createElement(\"div\");\r\n        head.setAttribute(\"class\", \"gnome_head\");\r\n        head.innerText=\"( ͡° ᴥ ͡°)\";\r\n        gnome.appendChild(head);\r\n\r\n        const body = document.createElement(\"div\");\r\n        body.setAttribute(\"class\", \"gnome_body\");\r\n        body.innerText=\"/ ## \\\\\";\r\n        gnome.appendChild(body);\r\n\r\n        const feet = document.createElement(\"div\");\r\n        feet.setAttribute(\"class\", \"gnome_feet\");\r\n        feet.innerText=\"##\";\r\n        feet.style=\"position: relative;left: 9px;\";\r\n        gnome.appendChild(feet);\r\n    }\r\n\r\n}\r\ncustomElements.define(\"my-gnome\", Gnome);\r\n\n\n//# sourceURL=webpack://lab_webpack/./src/js/gnome_comp.js?");
+
+/***/ }),
+
+/***/ "./src/js/p1.js":
+/*!**********************!*\
+  !*** ./src/js/p1.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.js */ \"./src/js/styles.js\");\n/* harmony import */ var _person_comp_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./person_comp.js */ \"./src/js/person_comp.js\");\n/* harmony import */ var _person_comp_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_person_comp_js__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\nwindow.addEventListener(\"load\", (event) => {\r\n    setTimeout(() => {\r\n        window.location.href=\"p2.html\";\r\n      }, 9000);\r\n  });\n\n//# sourceURL=webpack://lab_webpack/./src/js/p1.js?");
+
+/***/ }),
+
+/***/ "./src/js/p2.js":
+/*!**********************!*\
+  !*** ./src/js/p2.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.js */ \"./src/js/styles.js\");\n/* harmony import */ var _person_comp_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./person_comp.js */ \"./src/js/person_comp.js\");\n/* harmony import */ var _person_comp_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_person_comp_js__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\nconst text = document.getElementById(\"text-p2\");\r\nwindow.addEventListener(\"load\", (event) => {\r\n    setTimeout(() => {\r\n        text.style.color=\"white\";\r\n        setTimeout(() => {\r\n            window.location.href=\"p3.html\";\r\n        }, 4000);\r\n    }, 1000);\r\n});\n\n//# sourceURL=webpack://lab_webpack/./src/js/p2.js?");
+
+/***/ }),
+
+/***/ "./src/js/p3.js":
+/*!**********************!*\
+  !*** ./src/js/p3.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.js */ \"./src/js/styles.js\");\n/* harmony import */ var _person_comp_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./person_comp.js */ \"./src/js/person_comp.js\");\n/* harmony import */ var _person_comp_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_person_comp_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _gnome_comp_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gnome_comp.js */ \"./src/js/gnome_comp.js\");\n/* harmony import */ var _gnome_comp_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_gnome_comp_js__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\nconst gnome = document.createElement(\"my-gnome\");\r\nconst buble = document.getElementById(\"gnome-buble-p3\");\r\nvar bandera=true;\r\nbuble.addEventListener(\r\n    \"mouseover\",\r\n    (event) => {\r\n        if(bandera){\r\n            bandera=false\r\n            gnome.style.position=\"relative\";\r\n            gnome.style.top=\"150px\";\r\n            gnome.style.left=\"-350px\";\r\n            buble.appendChild(gnome);\r\n            setTimeout(() => {\r\n                const text = document.createElement(\"p\");\r\n                text.innerText=\"Hola, soy el gnomo \\n Acompañame a mi biblioteca!\";\r\n                text.style.color=\"white\";\r\n                text.style.position=\"relative\";\r\n                text.style.left=\"100px\";\r\n                text.style.top=\"40px\";\r\n                buble.appendChild(text);\r\n                setTimeout(() => {\r\n                    window.location.href=\"../index.html\";\r\n                }, 4000);\r\n            }, 1000);\r\n        }\r\n    },\r\n    false\r\n  );\n\n//# sourceURL=webpack://lab_webpack/./src/js/p3.js?");
 
 /***/ }),
 
