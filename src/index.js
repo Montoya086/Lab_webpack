@@ -1,3 +1,5 @@
-import './js/gnome.js';
+import './js/book_comp.js';
 import './js/gnome_comp.js';
-import './js/styles.js'
+import './js/gnome.js';
+import './js/styles';
+import './js/person_comp.js';
