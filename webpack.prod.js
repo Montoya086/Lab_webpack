@@ -11,8 +11,6 @@ module.exports = merge(common, {
     },
     entry: {
         index: './src/index.js',
-        nuevos: './src/nuevos.js',
-        populares: './src/populares.js',
         p1: './src/js/p1.js',
         p2: './src/js/p2.js',
         p3: './src/js/p3.js',
@@ -30,23 +28,23 @@ module.exports = merge(common, {
       }), new HtmlWebpackPlugin({
         template: './src/nuevos.html',
         filename: 'nuevos.html',
-        chunks: ['nuevos']
+        chunks: ['index']
       }), new HtmlWebpackPlugin({
         template: './src/populares.html',
         filename: 'populares.html',
-        chunks: ['populares']
+        chunks: ['index']
       }), new HtmlWebpackPlugin({
         template: './src/historia/p1.html',
         filename: 'historia/p1.html',
-        chunks: ['p1']
+        chunks: ['index']
       }), new HtmlWebpackPlugin({
         template: './src/historia/p2.html',
         filename: 'historia/p2.html',
-        chunks: ['p2']
+        chunks: ['index']
       }), new HtmlWebpackPlugin({
         template: './src/historia/p3.html',
         filename: 'historia/p3.html',
-        chunks: ['p3']
+        chunks: ['index']
       })],
       module: {
         rules: [
