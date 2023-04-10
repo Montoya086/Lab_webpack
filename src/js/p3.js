@@ -1,3 +1,8 @@
+import "@babel/polyfill";
+import './gnome_comp.js';
+import './gnome.js';
+import './person_comp.js';
+import './styles';
 if(document.getElementById('p3')!=null){
     const gnome = document.createElement("my-gnome");
     const buble = document.getElementById("gnome-buble-p3");

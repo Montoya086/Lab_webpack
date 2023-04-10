@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nuevos</title>
+        <meta charset="utf-8">
+    <script defer src="nuevos.bundle.js"></script><link href="bundle.css" rel="stylesheet"></head>
+    <body class="body_css">
+        <div class="container">
+            <div class="row">
+                <div class="navbar span-12">
+                    <ul class="navbar_ul_css">
+                        <li><h1 class="title_css">Nuevos Libros</h1></li>
+                        <li><a href="index.html" class="nav_element">INDEX</a></li>
+                        <li><a href="populares.html" class="nav_element">POPULARES</a></li>
+                        <li><a href="nuevos.html" class="nav_element">NUEVOS LANZAMIENTOS</a></li>
+                    </ul>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="bg-image-1" src="https://p4.wallpaperbetter.com/wallpaper/897/1005/115/library-artwork-books-wallpaper-preview.jpg">
+                </div>
+                <div class="col-md-6">
+                    <div class="new-book-div" id="new_book_div">
+                        <a href="./historia/p1.html">
+                            <my-display 
+                            author="⍑𝙹リℸ ̣ 𝙹⚍リ╎ ⊣𝙹" 
+                            title="ᒲᒷリᔑᓭᔑリℸ⚍リ" 
+                            src="https://i.pinimg.com/600x315/7c/0f/3c/7c0f3c43d60b0bb6e4994061dea7d93f.jpg"
+                            type="2"
+                            class="new_book"
+                            ></my-display>
+                        </a>
+                    </div>
+                    <div id="fire">
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img class="bg-image-1" src="https://p4.wallpaperbetter.com/wallpaper/897/1005/115/library-artwork-books-wallpaper-preview.jpg">
+                </div>
+            </div>
+            <div class="gnome_div"><!--Gnome-->
+                <div class="gnome_buble" id="gnome_buble">
+                    <div class="gb1" id="gb1"></div>
+                    <h2 class="gnome_text">¡Estoy para ayudar!</h2>
+                </div>
+                <h2 class="gnome_title">Gnomo ayudante de biblioteca => </h2>
+                <my-gnome id="biblio_gnome"></my-gnome>
+            </div>
+        </div>
+    </body>
+    <script src="./js/gnome.js"></script>
+</html>

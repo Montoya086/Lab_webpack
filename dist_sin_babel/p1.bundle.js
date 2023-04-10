@@ -31,27 +31,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_book_comp_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/book_comp.js */ \"./src/js/book_comp.js\");\n/* harmony import */ var _js_book_comp_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_book_comp_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_gnome_comp_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/gnome_comp.js */ \"./src/js/gnome_comp.js\");\n/* harmony import */ var _js_gnome_comp_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_gnome_comp_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_gnome_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/gnome.js */ \"./src/js/gnome.js\");\n/* harmony import */ var _js_gnome_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_gnome_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_person_comp_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/person_comp.js */ \"./src/js/person_comp.js\");\n/* harmony import */ var _js_person_comp_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_person_comp_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_p1_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/p1.js */ \"./src/js/p1.js\");\n/* harmony import */ var _js_p1_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_p1_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _js_p2_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/p2.js */ \"./src/js/p2.js\");\n/* harmony import */ var _js_p2_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_p2_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _js_p3_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/p3.js */ \"./src/js/p3.js\");\n/* harmony import */ var _js_p3_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_p3_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _js_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/styles */ \"./src/js/styles.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://lab_webpack/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/js/book_comp.js":
-/*!*****************************!*\
-  !*** ./src/js/book_comp.js ***!
-  \*****************************/
-/***/ (() => {
-
-eval("class bDisplay extends HTMLElement{\r\n    constructor(){\r\n        super();\r\n    }\r\n\r\n    connectedCallback() {\r\n        const shadowDOM = this.attachShadow({ mode: \"open\" });\r\n        const link = document.createElement(\"link\");\r\n        shadowDOM.appendChild(link);\r\n        const card = document.createElement(\"div\");\r\n        const style = document.createElement(\"style\");\r\n        style.appendChild(document.createTextNode(\".book-card2:hover{box-shadow: 7px 7px 20px red;}\"));\r\n        style.appendChild(document.createTextNode(\".book-card:hover{box-shadow: 3px 3px 10px white;}\"));\r\n        shadowDOM.appendChild(style);\r\n        if(this.getAttribute(\"type\")==2){\r\n            card.setAttribute(\"class\",\"book-card2\");\r\n            card.style=\"width: 50%;height: 50%;margin-bottom: 30px;\";\r\n        }else{\r\n            card.setAttribute(\"class\",\"book-card\");\r\n            card.style=\"width: 100%;height: 100%;margin-bottom: 30px;\";\r\n        }\r\n        shadowDOM.appendChild(card);\r\n\r\n        const image = document.createElement(\"img\");\r\n        image.setAttribute(\"src\",this.getAttribute(\"src\"));\r\n        image.setAttribute(\"class\",\"book-card-image\");\r\n        image.style=\"width: 100%;height: 90%;\";\r\n        card.appendChild(image);\r\n\r\n        const title = document.createElement(\"p\");\r\n        title.innerText=\"Titulo: \"+this.getAttribute(\"title\");\r\n        title.setAttribute(\"class\",\"book-card-title\");\r\n        title.style=\"font-size: small;color:white;padding-left: 5px;\";\r\n        card.appendChild(title);\r\n\r\n        const author = document.createElement(\"p\");\r\n        author.innerText=\"Autor: \"+this.getAttribute(\"author\");\r\n        author.setAttribute(\"class\",\"book-card-author\");\r\n        author.style=\"font-size: small;color:white;padding-left: 5px;\";\r\n        card.appendChild(author);\r\n    }\r\n\r\n}\r\ncustomElements.define(\"my-display\", bDisplay);\n\n//# sourceURL=webpack://lab_webpack/./src/js/book_comp.js?");
-
-/***/ }),
-
 /***/ "./src/js/gnome.js":
 /*!*************************!*\
   !*** ./src/js/gnome.js ***!
@@ -76,29 +55,10 @@ eval("class Gnome extends HTMLElement{\r\n    constructor(){\r\n        super();
 /*!**********************!*\
   !*** ./src/js/p1.js ***!
   \**********************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("if(document.getElementById('p1')!=null){\r\n    window.addEventListener(\"load\", (event) => {\r\n        setTimeout(() => {\r\n            window.location.href=\"p2.html\";\r\n        }, 9000);\r\n    });\r\n}\n\n//# sourceURL=webpack://lab_webpack/./src/js/p1.js?");
-
-/***/ }),
-
-/***/ "./src/js/p2.js":
-/*!**********************!*\
-  !*** ./src/js/p2.js ***!
-  \**********************/
-/***/ (() => {
-
-eval("if(document.getElementById('p2')!=null){\r\n    const text = document.getElementById(\"text-p2\");\r\n    window.addEventListener(\"load\", (event) => {\r\n        setTimeout(() => {\r\n            text.style.color=\"white\";\r\n            setTimeout(() => {\r\n                window.location.href=\"p3.html\";\r\n            }, 4000);\r\n        }, 1000);\r\n    });\r\n}\n\n//# sourceURL=webpack://lab_webpack/./src/js/p2.js?");
-
-/***/ }),
-
-/***/ "./src/js/p3.js":
-/*!**********************!*\
-  !*** ./src/js/p3.js ***!
-  \**********************/
-/***/ (() => {
-
-eval("if(document.getElementById('p3')!=null){\r\n    const gnome = document.createElement(\"my-gnome\");\r\n    const buble = document.getElementById(\"gnome-buble-p3\");\r\n    var bandera=true;\r\n    buble.addEventListener(\r\n        \"mouseover\",\r\n        (event) => {\r\n            if(bandera){\r\n                bandera=false\r\n                gnome.style.position=\"relative\";\r\n                gnome.style.top=\"150px\";\r\n                gnome.style.left=\"-350px\";\r\n                buble.appendChild(gnome);\r\n                setTimeout(() => {\r\n                    const text = document.createElement(\"p\");\r\n                    text.innerText=\"Hola, soy el gnomo \\n Acompañame a mi biblioteca!\";\r\n                    text.style.color=\"white\";\r\n                    text.style.position=\"relative\";\r\n                    text.style.left=\"100px\";\r\n                    text.style.top=\"40px\";\r\n                    buble.appendChild(text);\r\n                    setTimeout(() => {\r\n                        window.location.href=\"../index.html\";\r\n                    }, 4000);\r\n                }, 1000);\r\n            }\r\n        },\r\n        false\r\n    );\r\n}\n\n//# sourceURL=webpack://lab_webpack/./src/js/p3.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gnome_comp_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gnome_comp.js */ \"./src/js/gnome_comp.js\");\n/* harmony import */ var _gnome_comp_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_gnome_comp_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _gnome_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gnome.js */ \"./src/js/gnome.js\");\n/* harmony import */ var _gnome_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_gnome_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _person_comp_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./person_comp.js */ \"./src/js/person_comp.js\");\n/* harmony import */ var _person_comp_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_person_comp_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles */ \"./src/js/styles.js\");\n\r\n\r\n\r\n\r\nif(document.getElementById('p1')!=null){\r\n    window.addEventListener(\"load\", (event) => {\r\n        setTimeout(() => {\r\n            window.location.href=\"p2.html\";\r\n        }, 9000);\r\n    });\r\n}\n\n//# sourceURL=webpack://lab_webpack/./src/js/p1.js?");
 
 /***/ }),
 
@@ -195,7 +155,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/p1.js");
 /******/ 	
 /******/ })()
 ;
